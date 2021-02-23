@@ -23,7 +23,7 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
-
+    $(window).on('load',function() {
    $('.carousel').owlCarousel({
        margin: 20,
        loop: true,
@@ -32,20 +32,21 @@ $(document).ready(function(){
        responsive: {
            0:{
                items: 1,
-               nav: false
+            //    nav: false
            },
            600:{
                items: 2,
-               nav: false
+            //    nav: false
            },
            900:{
                items: 3, 
-               nav: false
+            //    nav: false
            }
           
        
    }
    });
+});
 
    $('.bars').waypoint(function() {
          $('.progress .progress-bar').each(function() {
